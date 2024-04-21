@@ -64,6 +64,8 @@ String型の比較;
 name1.equals(name2);
 
 
+--------------------
+for分
 
 
 
