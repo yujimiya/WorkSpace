@@ -1,25 +1,20 @@
-class Sample1_14_2 {
+class Sample1_14_1 {  //クラスブロック（設計図）管理のために一つのファイルに一つのクラス
 	
-	//引数が不要なメソッド
-	static String getName() {
+	public static void main(String[] args) {//メソッドはパーツの設計図　メソッド名は、（）の手前
 		
-		return "モコ" ;
+		//メソッドのしくみ
+		
+		int print = sum( 4 , 3 ) ;
+		
+		System.out.println("print：" + print);
 		
 	}
-	
-	//戻り値なしのメソッド
-	static void printName(String name) {
+	//引数の方と戻り値の方は一致していないとダメ
+	static int sum( int num1 , int num2 ) {
 		
-		System.out.println("なまえ：" + name);
+		int calcResult = num1 + num2 ;
 		
-	}
-	
-	//プログラムは必ずmainメソッドからはじまる
-	public static void main(String[] args) {
-		
-		String print = getName() ;
-		
-		printName( print );
+		return calcResult ;
 		
 	}
 	
